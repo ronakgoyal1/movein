@@ -1,31 +1,28 @@
-import { Navbar } from "./components/layout/Navbar";
-import { Footer } from "./components/layout/Footer";
-import { Hero } from "./components/sections/Hero";
-import { HowItWorks } from "./components/sections/HowItWorks";
-import { WhatsIncluded } from "./components/sections/WhatsIncluded";
-import { WhyWisor } from "./components/sections/WhyWisor";
-import { WhyNotAmazon } from "./components/sections/WhyNotAmazon";
-import { FAQ } from "./components/sections/FAQ";
-import { ForDealers } from "./components/sections/ForDealers";
-import { KitBuilder } from "./components/builder/KitBuilder";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { ConfiguratorLayout } from "./pages/setup/ConfiguratorLayout";
+import { CollegeSelection } from "./pages/setup/CollegeSelection";
+import { BrowseProducts } from "./pages/setup/BrowseProducts";
+import { ReviewOrder } from "./pages/setup/ReviewOrder";
+import { DeliveryDetails } from "./pages/setup/DeliveryDetails";
+import { ProductDrawer } from "./components/builder/ProductDrawer";
 
 function App() {
   return (
-    <div className="font-sans antialiased text-primary selection:bg-accent/20">
-      <Navbar />
+    <div className="font-sans antialiased text-primary selection:bg-accent/20 h-full">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        
+        <Route path="/setup" element={<ConfiguratorLayout />}>
+          <Route index element={<CollegeSelection />} />
+          <Route path="browse" element={<BrowseProducts />} />
+          <Route path="review" element={<ReviewOrder />} />
+          <Route path="delivery" element={<DeliveryDetails />} />
+        </Route>
+      </Routes>
       
-      <main>
-        <Hero />
-        <HowItWorks />
-        <WhatsIncluded />
-        <WhyWisor />
-        <WhyNotAmazon />
-        <FAQ />
-        <ForDealers />
-      </main>
-
-      <Footer />
-      <KitBuilder />
+      {/* Product Drawer is global for setup, can stay here or inside ConfiguratorLayout */}
+      <ProductDrawer />
     </div>
   );
 }

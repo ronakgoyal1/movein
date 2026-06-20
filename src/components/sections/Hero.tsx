@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/Button";
-import { useBuilderStore } from "@/store/useBuilderStore";
+import { useNavigate } from "react-router-dom";
 import { WHATSAPP_NUMBER } from "@/data";
 
 export function Hero() {
-  const setBuilderOpen = useBuilderStore((state) => state.setOpen);
+  const navigate = useNavigate();
 
   return (
     <section className="relative grid grid-cols-1 lg:grid-cols-[62fr_38fr] lg:h-[calc(100vh-80px)] lg:mt-[80px] overflow-hidden">
@@ -78,7 +78,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="flex flex-wrap items-center gap-4"
         >
-          <Button variant="dark" size="lg" onClick={() => setBuilderOpen(true)}>
+          <Button variant="dark" size="lg" onClick={() => navigate("/setup")}>
             Build My Setup
             <ArrowRight size={16} />
           </Button>

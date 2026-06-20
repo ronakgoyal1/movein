@@ -2,9 +2,11 @@ import { motion } from "framer-motion";
 import { ShoppingBag, ArrowRight } from "lucide-react";
 import { useBuilderStore } from "@/store/useBuilderStore";
 import { MINIMUM_ORDER_VALUE } from "@/data";
+import { useNavigate } from "react-router-dom";
 
 export function FloatingCart() {
-  const { cart, getTotal, getItemCount, meetsMinimum, setStep } = useBuilderStore();
+  const navigate = useNavigate();
+  const { cart, getTotal, getItemCount, meetsMinimum } = useBuilderStore();
   const total = getTotal();
   const itemCount = getItemCount();
   const canProceed = meetsMinimum();
@@ -62,9 +64,8 @@ export function FloatingCart() {
           </div>
         </div>
 
-        {/* Review button */}
         <button
-          onClick={() => canProceed && setStep("review")}
+          onClick={() => canProceed && navigate("/setup/review")}
           disabled={!canProceed}
           className={`flex items-center gap-2 px-5 py-3 rounded-lg text-[0.875rem] font-semibold transition-all ${
             canProceed
