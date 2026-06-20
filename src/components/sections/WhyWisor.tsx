@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Package, Truck, MessageSquare } from "lucide-react";
-import { useBuilderStore } from "@/store/useBuilderStore";
+import { useNavigate } from "react-router-dom";
 
 export function WhyWisor() {
-  const setBuilderOpen = useBuilderStore((state) => state.setOpen);
+  const navigate = useNavigate();
 
   return (
     <section id="why" className="relative bg-dark py-20 md:py-32 overflow-hidden">
@@ -47,7 +47,7 @@ export function WhyWisor() {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               <button 
-                onClick={() => setBuilderOpen(true)}
+                onClick={() => navigate("/setup")}
                 className="inline-flex items-center gap-2 text-[0.875rem] font-medium tracking-wider uppercase text-white/70 border-b border-white/30 pb-px transition-all hover:text-white hover:border-white/70 hover:gap-3"
               >
                 Start building

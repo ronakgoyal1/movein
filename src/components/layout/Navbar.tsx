@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
-import { useBuilderStore } from "@/store/useBuilderStore";
+import { useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const setBuilderOpen = useBuilderStore((state) => state.setOpen);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 30);
@@ -16,7 +16,7 @@ export function Navbar() {
   }, []);
 
   const openBuilder = () => {
-    setBuilderOpen(true);
+    navigate("/setup");
     setMobileMenuOpen(false);
   };
 

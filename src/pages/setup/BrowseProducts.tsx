@@ -34,7 +34,7 @@ export function BrowseProducts() {
     let filtered = products;
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
-      filtered = products.filter(p => p.name.toLowerCase().includes(q) || p.description.toLowerCase().includes(q) || p.tags?.some(t => t.toLowerCase().includes(q)));
+      filtered = products.filter(p => p.name.toLowerCase().includes(q) || p.description.toLowerCase().includes(q));
     } else {
       filtered = products.filter((p) => p.categoryId === activeCat);
     }
