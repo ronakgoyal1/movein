@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F3EFE7" />
+  <title>Wisor — Move-In Kits for IIIT Allahabad &amp; MNNIT Allahabad</title>
+  <meta name="description" content="Premium, curated hostel move-in kits for freshers joining IIIT Allahabad and MNNIT Allahabad. Everything you need, delivered before your first day." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%232F3A2F'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='19' font-weight='700' fill='%23FBF8F2'>W</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════ -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="wrap">
+      <div class="nav-inner">
+
+        <a href="/" class="nav-logo" aria-label="Wisor — Home">
+          <div class="nav-logo-mark" aria-hidden="true">W</div>
+          <span class="nav-logo-name">Wisor</span>
+        </a>
+
+        <div class="nav-links" role="menubar">
+          <a href="#how" class="nav-link" role="menuitem">How it works</a>
+          <a href="#kits" class="nav-link" role="menuitem">Kits</a>
+          <a href="#faq" class="nav-link" role="menuitem">FAQ</a>
+        </div>
+
+        <button class="btn btn-dark btn-sm nav-cta" data-open-builder id="nav-cta">
+          Build My Kit
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav-mobile-menu" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <a href="#how" class="nav-mobile-link" data-close-mobile>How it works</a>
+    <a href="#kits" class="nav-mobile-link" data-close-mobile>Kits</a>
+    <a href="#why" class="nav-mobile-link" data-close-mobile>Why Wisor</a>
+    <a href="#faq" class="nav-mobile-link" data-close-mobile>FAQ</a>
+    <div class="nav-mobile-footer">
+      <button class="btn btn-accent btn-lg w-full" data-open-builder data-close-mobile id="mobile-cta">
+        Build My Kit
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════
+       HERO — Asymmetric split
+       ══════════════════════════════════ -->
+  <main>
+  <section class="hero" id="hero" aria-label="Hero — Wisor Freshers Kit">
+
+    <!-- Left: Image -->
+    <div class="hero-image-panel" aria-hidden="true">
+      <img
+        class="hero-img"
+        src="hero.jpg"
+        alt="A warmly lit, organised hostel room — neatly made bed, wooden desk with a lamp, a calm space ready for a new beginning"
+        width="900"
+        height="1200"
+        fetchpriority="high"
+        loading="eager"
+      />
+      <div class="hero-img-overlay"></div>
+      <div class="hero-image-caption">
+        <span class="hero-image-tag">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+          IIIT-A &amp; MNNIT-A
+        </span>
+        <span class="hero-image-tag">Delivered before day&nbsp;one</span>
+      </div>
+    </div>
+
+    <!-- Right: Content -->
+    <div class="hero-content-panel">
+      <div class="hero-eyebrow reveal">
+        <div class="hero-eyebrow-line" aria-hidden="true"></div>
+        <span class="t-label c-2">Move-in concierge</span>
+      </div>
+
+      <h1 class="t-display hero-headline reveal reveal-d1" id="hero-headline">
+        Move in.<br />
+        <em>Settle in.</em><br />
+        Thrive.
+      </h1>
+
+      <p class="t-body-lg hero-subhead reveal reveal-d2">
+        Curated hostel essentials for IIIT Allahabad and MNNIT Allahabad — delivered to your room before your first day.
+      </p>
+
+      <div class="hero-actions reveal reveal-d3">
+        <button class="btn btn-dark btn-lg" data-open-builder id="hero-cta-1" aria-label="Start building your kit">
+          Build My Kit
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+        <a href="#kits" class="link-arrow" id="hero-cta-2">
+          Explore kits
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-trust reveal reveal-d4" role="list" aria-label="Trust highlights">
+        <p class="t-label c-3">Why students trust Wisor</p>
+        <div class="hero-trust-row" role="presentation">
+          <div class="hero-trust-item" role="listitem">
+            <div class="trust-dot" aria-hidden="true"></div>
+            Curated by current students
+          </div>
+          <div class="hero-trust-item" role="listitem">
+            <div class="trust-dot" aria-hidden="true"></div>
+            Delivered before move-in
+          </div>
+          <div class="hero-trust-item" role="listitem">
+            <div class="trust-dot" aria-hidden="true"></div>
+            WhatsApp support
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════
+       HOW IT WORKS
+       ══════════════════════════════════ -->
+  <section class="how-section section-md" id="how" aria-labelledby="how-heading">
+    <div class="wrap">
+      <div class="how-inner">
+
+        <!-- Left: steps -->
+        <div>
+          <div class="reveal" style="margin-bottom:var(--sp-10);">
+            <span class="t-label c-acc" style="display:block;margin-bottom:var(--sp-4);">The process</span>
+            <h2 class="t-h1" id="how-heading">
+              Three steps.<br />
+              <span class="t-serif-italic c-2">That&rsquo;s all it takes.</span>
+            </h2>
+          </div>
+
+          <ol class="how-steps-list" aria-label="How Wisor works">
+            <li class="how-step reveal reveal-d1">
+              <div class="how-step-num" aria-hidden="true">01</div>
+              <div class="how-step-body">
+                <h3 class="how-step-title">Choose your college</h3>
+                <p class="how-step-desc">Select IIIT Allahabad or MNNIT Allahabad. Your kit is tailored to that specific hostel layout, room size, and what seniors tell us actually gets used.</p>
+              </div>
+            </li>
+            <li class="how-step reveal reveal-d2">
+              <div class="how-step-num" aria-hidden="true">02</div>
+              <div class="how-step-body">
+                <h3 class="how-step-title">Customise your essentials</h3>
+                <p class="how-step-desc">Start with a curated base kit. Swap or upgrade any item — mattress, pillow, lamp, cooler. The price updates in real time. You only pay for what you choose.</p>
+              </div>
+            </li>
+            <li class="how-step reveal reveal-d3">
+              <div class="how-step-num" aria-hidden="true">03</div>
+              <div class="how-step-body">
+                <h3 class="how-step-title">We deliver it before day one</h3>
+                <p class="how-step-desc">Your kit arrives 1–2 days before your move-in date. Walk into your hostel room and find everything already there. Begin your journey without the chaos.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Right: image -->
+        <div class="how-visual reveal reveal-d2">
+          <img
+            src="hero.jpg"
+            alt="Organised hostel room interior with warm afternoon light"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+          <div class="how-visual-caption">
+            A Wisor-ready room at IIIT Allahabad
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════
+       FEATURED KITS
+       ══════════════════════════════════ -->
+  <section class="kits-section section" id="kits" aria-labelledby="kits-heading">
+    <div class="wrap">
+      <div class="kits-header reveal">
+        <div>
+          <span class="t-label c-3" style="display:block;margin-bottom:var(--sp-4);">Move-in kits</span>
+          <h2 class="t-display-md" id="kits-heading">
+            Find your kit.
+          </h2>
+        </div>
+        <p class="t-body c-2" style="max-width:380px;">
+          Each kit is a thoughtful starting point — not a rigid package. Every item can be swapped or upgraded to match exactly what you need.
+        </p>
+      </div>
+
+      <div class="kits-list reveal" id="kits-list" role="list" aria-label="Available kits">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="reveal" style="margin-top:var(--sp-8);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--sp-4);">
+        <p class="t-sm c-3">All kits are fully customisable after selection.</p>
+        <button class="link-arrow" data-open-builder id="kits-guide-cta">
+          Let us guide you
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════
+       WHY WISOR — Dark section
+       ══════════════════════════════════ -->
+  <section class="why-section section" id="why" aria-labelledby="why-heading">
+    <div class="wrap">
+      <div class="why-inner">
+
+        <!-- Left: headline -->
+        <div class="why-header-side">
+          <div class="reveal">
+            <span class="t-label why-label" style="display:block;margin-bottom:var(--sp-5);">Why Wisor</span>
+            <h2 class="t-display-md why-headline" id="why-heading">
+              Built by students.<br />
+              <em>For the day<br />everything changes.</em>
+            </h2>
+          </div>
+          <p class="t-body why-body-text reveal reveal-d1">
+            We spent a semester talking to freshers at IIIT Allahabad and MNNIT Allahabad. We asked what they wished they had on move-in day, what they bought and never used, and what their parents worried about most. These kits are the result.
+          </p>
+          <div class="reveal reveal-d2">
+            <button class="link-arrow-lt link-arrow" data-open-builder id="why-cta">
+              Start building
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: feature list -->
+        <div class="why-features-side">
+          <ul class="why-feature-list reveal reveal-d1" role="list">
+            <li class="why-feature" role="listitem">
+              <div class="why-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <div class="why-feature-name">Curated by students</div>
+                <div class="why-feature-desc">Every item was chosen by people who have lived in these exact hostels. Not marketers. Not vendors.</div>
+              </div>
+            </li>
+            <li class="why-feature" role="listitem">
+              <div class="why-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+              </div>
+              <div>
+                <div class="why-feature-name">No unnecessary products</div>
+                <div class="why-feature-desc">We removed everything that ends up in a corner after week one. Only items that earn their space.</div>
+              </div>
+            </li>
+            <li class="why-feature" role="listitem">
+              <div class="why-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="13" x="4" y="5" rx="1"/><path d="M16 3v4M8 3v4M4 11h16"/></svg>
+              </div>
+              <div>
+                <div class="why-feature-name">Delivered before move-in day</div>
+                <div class="why-feature-desc">Your kit arrives before you do. Walk in and find your room already set up. Let the goodbyes be the hard part — not the logistics.</div>
+              </div>
+            </li>
+            <li class="why-feature" role="listitem">
+              <div class="why-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 9.02a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.93 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="why-feature-name">WhatsApp support, always</div>
+                <div class="why-feature-desc">We're reachable on WhatsApp. Real answers within an hour. No ticket systems, no bots.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════
+       TESTIMONIALS
+       ══════════════════════════════════ -->
+  <section class="testimonials-section section-md" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom:var(--sp-12);">
+        <span class="t-label c-3" style="display:block;margin-bottom:var(--sp-4);">From students</span>
+        <h2 class="t-h1" id="testimonials-heading">
+          What freshers said.
+        </h2>
+      </div>
+      <div class="testimonials-grid" id="testimonials-container" role="list" aria-label="Student testimonials">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════
+       FAQ
+       ══════════════════════════════════ -->
+  <section class="faq-section section" id="faq" aria-labelledby="faq-heading">
+    <div class="wrap">
+      <div class="faq-inner">
+
+        <!-- Sidebar -->
+        <div class="faq-sidebar reveal">
+          <span class="t-label c-acc" style="display:block;margin-bottom:var(--sp-5);">Questions</span>
+          <h2 class="t-h1 faq-sidebar-title" id="faq-heading">
+            Everything<br />you want<br />to know.
+          </h2>
+          <p class="faq-sidebar-text">
+            Still have questions? We're on WhatsApp and will reply within the hour.
+          </p>
+          <a
+            href="https://wa.me/919999999999"
+            class="link-arrow"
+            target="_blank"
+            rel="noopener"
+            aria-label="Ask us on WhatsApp"
+          >
+            Ask on WhatsApp
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- FAQ list -->
+        <div class="faq-list" id="faq-list" role="list" aria-label="Frequently asked questions">
+          <!-- Rendered by JS -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════
+       CTA BANNER
+       ══════════════════════════════════ -->
+  <section class="cta-banner section" id="cta" aria-label="Final call to action">
+    <div class="wrap">
+      <div class="cta-banner-inner">
+        <div class="reveal">
+          <span class="t-label cta-banner-label" style="display:block;margin-bottom:var(--sp-5);">Ready?</span>
+          <h2 class="t-display-md cta-banner-title" id="cta-heading">
+            Your room<br />
+            is waiting.<br />
+            <em>Make it yours.</em>
+          </h2>
+        </div>
+        <p class="t-body cta-banner-text reveal reveal-d1">
+          Takes under five minutes. Delivered before your first day. Trusted by students at IIIT Allahabad and MNNIT Allahabad.
+        </p>
+        <div class="cta-banner-actions reveal reveal-d2">
+          <button class="btn btn-accent btn-lg" data-open-builder id="cta-main-btn">
+            Build My Kit
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <a href="https://wa.me/919999999999" class="btn btn-outline-light" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Ask on WhatsApp
+          </a>
+        </div>
+        <p class="cta-banner-footnote reveal reveal-d3">No account needed &nbsp;·&nbsp; Pay on delivery &nbsp;·&nbsp; 48-hour return policy</p>
+      </div>
+    </div>
+  </section>
+  </main>
+
+
+  <!-- ══════════════════════════════════
+       FOOTER
+       ══════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-top">
+
+        <div>
+          <div class="footer-brand-mark">
+            <div class="footer-mark" aria-hidden="true">W</div>
+            <span class="footer-name">Wisor</span>
+          </div>
+          <p class="footer-desc">
+            A premium move-in concierge for freshers joining IIIT Allahabad and MNNIT Allahabad. Everything you need, delivered before day one.
+          </p>
+          <a href="https://wa.me/919999999999" class="footer-wa" target="_blank" rel="noopener" aria-label="Chat with Wisor on WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Navigate</p>
+          <ul class="footer-links">
+            <li><a href="#how" class="footer-link">How it works</a></li>
+            <li><a href="#kits" class="footer-link">Browse kits</a></li>
+            <li><a href="#why" class="footer-link">Why Wisor</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Colleges</p>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">IIIT Allahabad</a></li>
+            <li><a href="#" class="footer-link">MNNIT Allahabad</a></li>
+          </ul>
+          <p class="footer-col-title" style="margin-top:1.5rem;">Kits</p>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Essential Kit</a></li>
+            <li><a href="#" class="footer-link">Comfort Kit</a></li>
+            <li><a href="#" class="footer-link">Premium Kit</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Wisor. All rights reserved.</span>
+        <span style="color:rgba(255,255,255,0.15);">Made with care, for freshers.</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════
+       KIT BUILDER OVERLAY
+       ══════════════════════════════════ -->
+  <div
+    class="builder-overlay"
+    id="builder-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Kit builder"
+  >
+    <div class="builder-backdrop" id="builder-backdrop" aria-hidden="true"></div>
+
+    <div class="builder-sheet" id="builder-sheet">
+
+      <!-- Handle -->
+      <div class="sheet-handle" aria-hidden="true"><span></span></div>
+
+      <!-- Header -->
+      <div class="sheet-header">
+        <div class="sheet-header-row">
+          <div>
+            <p class="sheet-title-sm">Kit builder</p>
+            <p class="sheet-step-label" id="builder-step-label">Build your kit</p>
+          </div>
+          <button class="sheet-close" id="builder-close" aria-label="Close kit builder">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <!-- Progress indicators -->
+        <nav class="sheet-progress" aria-label="Builder progress">
+          <div class="prog-step active" data-prog-step="0">
+            <div class="prog-dot">1</div>
+            <span>College</span>
+          </div>
+          <div class="prog-connector"></div>
+          <div class="prog-step" data-prog-step="1">
+            <div class="prog-dot">2</div>
+            <span>Kit</span>
+          </div>
+          <div class="prog-connector"></div>
+          <div class="prog-step" data-prog-step="2">
+            <div class="prog-dot">3</div>
+            <span>Customise</span>
+          </div>
+          <div class="prog-connector"></div>
+          <div class="prog-step" data-prog-step="3">
+            <div class="prog-dot">4</div>
+            <span>Review</span>
+          </div>
+          <div class="prog-connector"></div>
+          <div class="prog-step" data-prog-step="4">
+            <div class="prog-dot">5</div>
+            <span>Confirm</span>
+          </div>
+        </nav>
+      </div><!-- /sheet-header -->
+
+      <!-- Body -->
+      <div class="sheet-body">
+
+        <!-- Step 0: College -->
+        <div class="step-panel active" id="step-0">
+          <h2 class="t-h3 step-heading">Which college are you joining?</h2>
+          <p class="step-sub">We'll tailor your kit to your hostel's specific setup and requirements.</p>
+          <div class="college-opts" id="college-opts" role="radiogroup" aria-label="Select your college"></div>
+        </div>
+
+        <!-- Step 1: Kit -->
+        <div class="step-panel" id="step-1">
+          <h2 class="t-h3 step-heading">Choose your base kit</h2>
+          <p class="step-sub">A starting point — not a final decision. You can swap every item in the next step.</p>
+          <div class="kit-opts" id="kit-opts" role="radiogroup" aria-label="Select a kit tier"></div>
+        </div>
+
+        <!-- Step 2: Customise -->
+        <div class="step-panel" id="step-2">
+          <h2 class="t-h3 step-heading">Customise your essentials</h2>
+          <p class="step-sub">Choose your preferred option in each category. The price updates as you go.</p>
+          <div class="prod-cats" id="prod-cats" role="list" aria-label="Product categories"></div>
+        </div>
+
+        <!-- Step 3: Review -->
+        <div class="step-panel" id="step-3">
+          <h2 class="t-h3 step-heading">Review your order</h2>
+          <p class="step-sub">Everything look right? Confirm your delivery details in the next step.</p>
+          <div id="review-college-tag" aria-live="polite"></div>
+          <p class="review-sec-label">Your selections</p>
+          <div id="review-items" aria-live="polite"></div>
+          <div class="review-total-box" aria-live="polite">
+            <span class="review-total-lbl">Estimated total</span>
+            <span class="review-total-amt" id="review-total">₹0</span>
+          </div>
+          <p class="review-note">Payment on delivery — cash or UPI. Confirmed over WhatsApp.</p>
+        </div>
+
+        <!-- Step 4: Checkout -->
+        <div class="step-panel" id="step-4">
+          <h2 class="t-h3 step-heading">Delivery details</h2>
+          <p class="step-sub">We'll coordinate delivery via WhatsApp after you confirm below.</p>
+          <form class="checkout-form" id="checkout-form" novalidate>
+            <div class="f-field">
+              <label class="f-label" for="f-name">Full name <span aria-hidden="true" style="color:var(--c-terracotta)">*</span></label>
+              <input class="f-input" type="text" id="f-name" name="name" placeholder="Arjun Sharma" autocomplete="name" required aria-required="true" />
+            </div>
+            <div class="f-field">
+              <label class="f-label" for="f-phone">WhatsApp number <span aria-hidden="true" style="color:var(--c-terracotta)">*</span></label>
+              <input class="f-input" type="tel" id="f-phone" name="phone" placeholder="10-digit number" autocomplete="tel" inputmode="numeric" required aria-required="true" />
+            </div>
+            <div class="f-field">
+              <label class="f-label" for="f-college">College <span aria-hidden="true" style="color:var(--c-terracotta)">*</span></label>
+              <select class="f-input" id="f-college" name="college" required aria-required="true">
+                <option value="" disabled selected>Select college</option>
+              </select>
+            </div>
+            <div class="form-row-2">
+              <div class="f-field">
+                <label class="f-label" for="f-hostel">Hostel / Block</label>
+                <input class="f-input" type="text" id="f-hostel" name="hostel" placeholder="e.g. BH-3" autocomplete="off" />
+              </div>
+              <div class="f-field">
+                <label class="f-label" for="f-room">Room number</label>
+                <input class="f-input" type="text" id="f-room" name="room" placeholder="Optional" autocomplete="off" />
+              </div>
+            </div>
+            <div class="f-field">
+              <label class="f-label" for="f-date">Move-in date</label>
+              <input class="f-input" type="date" id="f-date" name="date" />
+            </div>
+            <button type="submit" class="btn btn-lg wa-btn" id="wa-submit" aria-label="Confirm order on WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              Confirm on WhatsApp
+            </button>
+            <p class="t-xs c-3 text-center" style="margin-top:0.5rem;">You'll be taken to WhatsApp to finalise. Payment on delivery.</p>
+          </form>
+        </div>
+
+      </div><!-- /sheet-body -->
+
+      <!-- Footer -->
+      <div class="sheet-footer">
+        <button class="sheet-back" id="sheet-back" aria-label="Go back" style="display:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="sheet-footer-info">
+          <div class="sheet-footer-price-lbl">Estimated total</div>
+          <div class="sheet-footer-price" id="footer-price" aria-live="polite">—</div>
+        </div>
+        <button class="btn btn-dark sheet-next" id="sheet-next" disabled style="opacity:0.4;">
+          Choose College
+        </button>
+      </div>
+
+    </div><!-- /builder-sheet -->
+  </div><!-- /builder-overlay -->
+
+
+  <!-- ══════════════════════════════════
+       STICKY CTA — Mobile
+       ══════════════════════════════════ -->
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <div class="sticky-cta-row">
+      <div class="sticky-cta-info">
+        <div class="sticky-cta-lbl">Ready to move in?</div>
+        <div class="sticky-cta-sub">Build your kit in 5 minutes</div>
+      </div>
+      <button class="btn btn-dark sticky-cta-btn" id="sticky-cta-btn" aria-label="Build your hostel kit">
+        Build My Kit
+      </button>
+    </div>
+  </div>
+
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
